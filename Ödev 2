@@ -1,0 +1,13 @@
+import math
+
+def euclideanDistance(a, b):
+    sonuc = 0
+    for i in range(len(a)):
+        tmp = (b[i] - a[i]) ** 2
+        sonuc += tmp
+    sonuc = math.sqrt(sonuc)
+    return sonuc
+
+points = [(2, 5), (7, 17)]
+son = euclideanDistance(points[0], points[1])
+print(son)
